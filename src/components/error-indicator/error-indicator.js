@@ -4,7 +4,7 @@ import "./error-indicator.css";
 
 const ErrorIndicator = () => {
   return (
-    <div class="alert alert-danger" role="alert">
+    <div className="alert alert-danger">
       Somethings wrong. Please, try once again :)
     </div>
   );

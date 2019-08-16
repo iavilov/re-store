@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import './app.css'
+import { withBookstoreService } from '../hoc';
 
-export default class App extends Component {
-
-    render() {
-        return (
-            <h1>App</h1>
-        );
-    }
+const App = ({ bookstoreService }) => {
+    console.log(bookstoreService.getBooks());
+    return <div>App</div>
 }
+
+export default withBookstoreService()(App);

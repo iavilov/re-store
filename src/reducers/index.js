@@ -3,7 +3,7 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-  switch (avtion.type) {
+  switch (action.type) {
     case "BOOKS_LOADER":
       return {
         books: action.payload
